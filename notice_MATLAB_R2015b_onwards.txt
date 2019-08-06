@@ -1,0 +1,6 @@
+***Notice to MATLAB R2015b and onwards users***
+
+The functionality of the AGC Simulink block was changed between releases R2015a and R2015b. We have had to create secondary versions of the affected files, denoted by the _15bonwards.slx file names. Anyone using R2015b or higher (ie R2016a, 16b, 17a etc..) will need to use these files instead.
+
+Additionally, there is a known issue with MATLAB r2015b, whereby figures will not open with the axes scaled to their ‘saved’ positions. If you open any of the provided Spectrum Sweeps from Exercise 3.13 in this edition and the x axes is scaled from 0–1, you will need to rescale it. For a sweep between 25MHz and 1.75GHz, enter the following into the command window to fix this: 
+xlim([25,1750])
